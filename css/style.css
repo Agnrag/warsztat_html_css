@@ -42,3 +42,61 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/*STYLE*/
+
+/*main setting*/
+
+a {
+    text-decoration: none;
+}
+
+/*page width*/
+.main {
+    width: 1200px;
+    margin: auto;
+}
+
+/*clear for elements*/
+.clear {
+    clear: both;
+}
+
+/*HEADER*/
+
+
+header {
+    background-color: black;
+}
+
+header h3, #nav li a {
+    text-transform: uppercase;
+    color: white;
+}
+header h3 {
+    float: left;
+    padding: 15px;
+    
+}
+
+#nav {
+    float: right;
+}
+
+#nav li {
+    padding: 15px;
+    display: inline-block;
+}
+
+/*SECTION SLIDER*/
+.slider img, .slider_text, .slider_slider a {
+    float: left;
+}
+
+.slider_button {
+    background: #24baa0;
+    color: white;
+    text-transform: uppercase;
+    padding: 16px 33px 16px 46px;
+    border-radius: 10px;
+}
