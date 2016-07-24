@@ -1,3 +1,8 @@
+@media font and (project_fonts) {
+    border: 2px solid black;
+}
+    
+    
 /*CSS RESET*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -43,17 +48,92 @@ table {
 	border-spacing: 0;
 }
 
+/*FONTS*/
+/*FONTS*/
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold.woff2') format('woff2'),
+         url('../fonts/raleway-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextrabold';
+    src: url('../fonts/raleway-extrabold.woff2') format('woff2'),
+         url('../fonts/raleway-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayextralight';
+    src: url('../fonts/raleway-extralight.woff2') format('woff2'),
+         url('../fonts/raleway-extralight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway-light.woff2') format('woff2'),
+         url('../fonts/raleway-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium.woff2') format('woff2'),
+         url('../fonts/raleway-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+         url('../fonts/raleway-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaysemibold';
+    src: url('../fonts/raleway-semibold.woff2') format('woff2'),
+         url('../fonts/raleway-semibold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 /*STYLE*/
 
 /*main setting*/
+body {
+    font-family: ralewayregular;
+    font-size: 14px;
+}
 
 a {
     text-decoration: none;
 }
 
+p {
+    line-height: 150%;
+}
+
+h2 {
+    border-bottom: 7px solid #24baa0;
+    width: 320px;
+    text-transform: uppercase;
+    font-family: ralewaymedium;
+    font-size: 16px;
+    margin-bottom: 45px;
+    padding-bottom: 6px;
+}
+
 /*page width*/
 .main {
-    width: 1200px;
+    width: 1052px;
     margin: auto;
 }
 
@@ -62,8 +142,12 @@ a {
     clear: both;
 }
 
-/*HEADER*/
+.color {
+    color: #27c7ab;
+    font-family: ralewaybold;
+}
 
+/*HEADER*/
 
 header {
     background-color: black;
@@ -75,8 +159,8 @@ header h3, #nav li a {
 }
 header h3 {
     float: left;
-    padding: 15px;
-    
+    padding: 15px 0;
+    font-family: ralewaysemibold;
 }
 
 #nav {
@@ -86,17 +170,266 @@ header h3 {
 #nav li {
     padding: 15px;
     display: inline-block;
+    font-family: ralewaybold;
 }
 
 /*SECTION SLIDER*/
-.slider img, .slider_text, .slider_slider a {
-    float: left;
+.slider_container {
+    background: rgba(246,41,12,1)), color-stop(0%, rgba(240,47,23,1)), color-stop(0%, rgba(250,250,250,1)), color-stop(100%, rgba(209,208,214,1)));
+    background: -webkit-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(250,250,250,1) 0%, rgba(209,208,214,1) 100%);
+    background: -o-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(250,250,250,1) 0%, rgba(209,208,214,1) 100%);
+    background: -ms-linear-gradient(top, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(250,250,250,1) 0%, rgba(209,208,214,1) 100%);
+    background: linear-gradient(to bottom, rgba(246,41,12,1) 0%, rgba(240,47,23,1) 0%, rgba(250,250,250,1) 0%, rgba(209,208,214,1) 100%);
 }
 
+.slider_section {
+    height: 500px; 
+}
+
+.slider img, .slider_text, .slider_click_l {
+    float: left;
+}
+.slider_click_r {
+    float: right;
+}
+.slider_click_l, .slider_click_r {
+    color: #27c7ab;
+    font-size: 70px;
+    margin-top: 210px;
+}
+
+.slider img {
+    margin-top: 85px;
+}
+
+.slider_text {
+    text-align: center;
+    margin: 130px 0;
+}
+
+.slider h1 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.slider_text p {
+/*    DO DOKŁADNEGO POMIARU*/
+    margin: 40px 0;
+    font-size: 16px;
+    
+}
 .slider_button {
     background: #24baa0;
     color: white;
     text-transform: uppercase;
     padding: 16px 33px 16px 46px;
     border-radius: 10px;
+    font-size: 16px;
+}
+
+
+/*SECTION PROMO*/
+.promo_section {
+    margin-top: 22px;
+}
+
+.promo_col, .promo_col_text {
+    float: left;
+    border: 1px solid #dcdcdc;
+}
+
+.promo_col {
+    position: relative;
+    height: 225px;
+    margin-right: 20px;
+}
+
+.promo_col_text h3 {
+    margin: 30px 0 16px 16px;
+}
+
+.promo_col_text p {
+    margin-left: 16px;
+    padding-right: 16px;
+}
+.promo_col_text p:nth-child(3) {
+    margin: 30px 0 45px 16px;
+}
+
+/*interactive opacity*/
+.promo_opacity {
+    height: 62px;
+    width: 329px;
+    position: absolute;
+    bottom: 14px;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255, 0.5);
+}
+
+.promo_opacity h3 {
+    margin: 16px 0 22px 13px;
+    position: absolute;
+}
+
+.promo_opacity h3, .promo_col_text h3 {
+    border-bottom: 7px solid #27c7ab;
+    width: 138px;
+    font-family: ralewaybold;
+}
+
+
+/*SECTION CONTACT*/
+.contact_section {
+    margin-top: 36px;
+}
+
+.contact_form, .contact_submit {
+    float: left;
+}
+
+.contact_form {
+    margin-right: 56px;
+}
+.contact_form input {
+    height: 63px;
+    width: 633px;
+    border: 1px solid #a3e2d7;
+    font-size: 24px;
+    padding-left: 16px;
+    color: #cecece;
+    font-weight: 100;
+    font-family: ralewaylight;
+    margin-bottom: 25px;
+}
+
+.contact_form input:last-child {
+    height: 186px;
+    margin-bottom: 100px;
+}
+
+.contact_submit div {
+    margin: 29px 0 34px 0;
+}
+
+/*zamiast obrazka - przycisk*/
+.contact_submit input {
+    height: 48px;
+    width: 48px;
+    opacity: 0.5;
+    background-color: white;
+    border: 1px solid #24baa0;   
+}
+
+.contact_submit p {
+    display: inline-block;
+    margin-left: 12px;
+    position: relative;
+    top: -7px;
+    color: #aeaeae;
+}
+
+.contact_submit input:active {
+    background-image: url(../images/form_ok.jpg);
+}
+
+.contact_send {
+    background-color: #24baa0;
+    border-radius: 10px;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 23px 110px;
+    font-family: ralewaysemibold;
+}
+
+
+/*SECTION MONEY*/
+.money_container {
+    margin-top: 74px;
+    background-color: #f1f1f1;
+    padding: 47px 82px 66px;
+}
+
+.money_col_1, .money_col_2 {
+    float:left;
+    width: 331px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+    margin-top: 30px;
+}
+
+/*circle div on the top*/
+.money_circle_1, .money_circle_2 {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -39px;
+    left: 144px;
+}
+
+.money_circle_1 {
+    background: #c2c2c2;
+    border: 14px solid #fff;
+    box-shadow: 0 0 0 1px #c2c2c2;
+}
+
+.money_circle_2 {
+    background: #fff;
+    border: 14px solid #27c7ab;
+    box-shadow: 0 0 0 1px #27c7ab;
+}
+
+/*header in the section*/
+.money_col_1 h3, .money_col_2 h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    font-family: ralewaybold;
+    margin: 30px;
+}
+
+.money_col_1 h3{
+    color: #27c7ab;
+}
+
+.money_col_2 h3 {
+    color: #fff;
+}
+
+/*circle in the section*/
+.money_circle_amount_1, .money_circle_amount_2 {
+    border-radius: 50%;
+    height: 127px;
+    width: 127px;
+    margin: 0 100px;
+}
+
+.money_circle_amount_1 {
+    border: 1px solid #c2c2c2;
+    background-color: #fff;
+}
+
+/*FOOTER*/
+footer p:first-child {
+    float: left;
+}
+
+.footer_social, .footer_logo {
+    float: right;
+}
+
+.footer_logo {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer_logo span {
+    font-weight: 700;
+}
+
+.footer_social {
+    margin: 0 66px;
 }

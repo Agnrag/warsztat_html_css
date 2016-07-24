@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
 	<title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
     <!--HEADER-->
     <header>
         <div class="head main">
-            <h3>Sit on chair</h3>
+            <h3>Sit <span class="color">on</span> chair</h3>
             <div class="head_nav">
                 <ul id="nav">
                     <li><a href="#">O firmie
@@ -34,24 +35,112 @@
     </header>
 
 <!--SECTION SLIDER-->
-    <section class="main">
-        <div class="slider_section">
-        <a href="#">&lt;</a>
-        <div class="slider">
-            <img src="images/black_chair.png" alt="chair">
-            <div class="slider_text">
-                <h1>Sit <span class="color">on </span>our <span class="color">chair</span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna.
-                </p>
-                <a href="#" class="slider_button" alt="Zobacz więcej">Zobacz więcej</a>
+    <section class="slider_container">
+        <div class="slider_section main">
+            <a href="#" class="slider_click_l">&lt;</a>
+            <div class="slider">
+                <img src="images/black_chair.png" alt="chair">
+                <div class="slider_text">
+                    <h1>Sit <span class="color">on </span>our <span class="color">chair</span></h1>
+                    <p>
+                        Lorem ipsum dolor sit amet enim. Etiam ullamcorper.<br>Suspendisse a pellentesque dui, non felis. Maecenas<br> malesuada elit lectus felis, malesuada ultricies. Curabitur et<br>ligula. Ut molestie a, ultricies porta urna.
+                    </p>
+                    <a href="#" class="slider_button">Zobacz więcej</a>
+                </div>
             </div>
+            <a href="#" class="slider_click_r">&gt;</a>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+    
+<!--section PROMO-->
+    <section class="promo_container">
+        <div class="promo_section main">
+            <div class="promo_col">
+                <div class="promo_opacity">
+                        <h3>Chair CLAIR</h3>
+                    </div>
+                <div class="promo_img">
+                <img src="images/box1_img.jpg" alt="chair Clair">  
+                </div>
+            </div>            
+            <div class="promo_col">
+                <img src="images/box2_img.jpg" alt="chair Margarita">
+                <div class="promo_opacity">
+                    <h3 class="promo_opacity_h">Chair MARGARITA</h3>
+                </div>
+            </div>
+            <div class="promo_col_text">
+                <h3>Finds all inputs</h3>
+                <p>
+                    Finds all inputs that are not checked<br>and highlights the next sibling span. Notice there<br>is no change when clicking the checkboxes<br>since no click events have been linked.
+                </p>
+                <p>
+                    Notice there is no change when clicking the<br>checkboxes since no click events have been
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+<!--section MONEY-->
+    <section class="money_container">
+        <div class="money_section main">
+            <h2>CENNIK</h2>
+            
+            <div class="money_col_1">
+                <div class="money_circle_1"></div>
+                <h3>Basic Plan</h3>
+                <div class="money_circle_amount">
+                
+                </div>
+            </div>
+            
+            <div class="money_col_2"></div>
+            <div class="money_col_1"></div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+<!--section CONTACT-->
+    <section class="contact_container main">
+        <div class="contact_section">
+            <h2>Kontakt</h2>
+            <form class="contact_form">
+                <input type="text" name="name" value="Imię">
+                <br>
+                <input type="text" name="email" value="email">
+                <br>
+                <input type="text" name="massage" value="Wiadomość">
+            </form>
+            <div class="contact_submit">
+                <img src="images/red_chair.png" alt="red_chair">
+                <br>
+                <div>
+                    <input type="checkbox" name="agree" value="agree">
+                    <p>
+                        Zgadzam się na przetwarzanie<br>danych osobowych
+                    </p>
+                </div>   
+                <br>
+                <button class="contact_send" type="submit">Wyślij</button>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+    
+<!--FOOTER-->
+    <footer class="main">
+        <p>Copyright 2014 | All Rights Reserved. - Sit On Chair</p>
+        <p class="footer_logo">Sit <span>on</span> chair</p>
+        <div class="footer_social">
+            <a href="#"><img src="images/flickr.png" alt="flickr"></a>
+            <a href="#"><img src="images/vimeo.png" alt="vimeo"></a>
+            <a href="#"><img src="images/pinterest.png" alt="pinterest"></a>
+            <a href="#"><img src="images/twitter.png" alt="twitter"></a>
         </div>
         <div class="clear"></div>
-        <a href="#">&gt;</a>
-        </div>
-        <div class="clear"></div>
-    </section>   
-
+    </footer>
 </body>
 </html>
