@@ -265,6 +265,7 @@ header h3 {
     bottom: 14px;
     background-color: rgb(255,255,255);
     background-color: rgba(255,255,255, 0.5);
+    float: left;
 }
 
 .promo_opacity h3 {
@@ -347,8 +348,8 @@ header h3 {
 /*SECTION MONEY*/
 .money_container {
     margin-top: 74px;
-    background-color: #f1f1f1;
     padding: 47px 82px 66px;
+    background: #f1f1f1;
 }
 
 .money_col_1, .money_col_2 {
@@ -360,6 +361,18 @@ header h3 {
     margin-top: 30px;
 }
 
+.money_col_1 {
+    background: #f9f9f9;
+    border: 1px solid #c2c2c2;
+}
+
+.money_col_2 {
+    background: #27c7ab;
+    border: 1px solid #27c7ab;
+    margin-left: 25px;
+    margin-right: 26px;
+}
+
 /*circle div on the top*/
 .money_circle_1, .money_circle_2 {
     border-radius: 50%;
@@ -367,7 +380,7 @@ header h3 {
     height: 25px;
     position: absolute;
     top: -39px;
-    left: 144px;
+    left: 40%;
 }
 
 .money_circle_1 {
@@ -380,9 +393,10 @@ header h3 {
     background: #fff;
     border: 14px solid #27c7ab;
     box-shadow: 0 0 0 1px #27c7ab;
+    z-index: 1;
 }
 
-/*header in the section*/
+/*header in this section*/
 .money_col_1 h3, .money_col_2 h3 {
     text-transform: uppercase;
     text-align: center;
@@ -391,7 +405,7 @@ header h3 {
     margin: 30px;
 }
 
-.money_col_1 h3{
+.money_col_1 h3 {
     color: #27c7ab;
 }
 
@@ -399,17 +413,97 @@ header h3 {
     color: #fff;
 }
 
-/*circle in the section*/
+/*circle with amount in this section*/
 .money_circle_amount_1, .money_circle_amount_2 {
     border-radius: 50%;
     height: 127px;
     width: 127px;
     margin: 0 100px;
+    position: relative;
+    text-align: center
 }
 
 .money_circle_amount_1 {
     border: 1px solid #c2c2c2;
     background-color: #fff;
+    color: #c2c2c2;
+}
+
+.money_circle_amount_2 {
+    border: 1px solid #27c7ab;
+    background-color: #fff;
+    color: #27c7ab;
+}
+
+.money_circle_amount_1 p, .money_circle_amount_2 p {
+    font-size: 16px;
+    font-weight: 700;
+    position: absolute;
+    top: 40px;
+    left: 35px
+}
+
+.money_circle_amount_1 p span, .money_circle_amount_2 p span {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/*table in this section*/
+.money_table_1, .money_table_2 {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.money_table_1 tr:nth-child(2n+1) {
+    height: 43px;
+    background: #e4e4e4;
+    color: #787878;
+}
+
+.money_table_1 tr:nth-child(2n) {
+    height: 46px;
+    background: #f1f1f1;
+    color: #787878;
+}
+
+.money_table_2 tr:nth-child(2n+1) {
+    height: 43px;
+    background: #fff;
+    color: #b6b6b6;
+}
+
+.money_table_2 tr:nth-child(2n) {
+    height: 46px;
+    background: #f1f1f1;
+    color: #a3a3a3;
+}
+
+.money_table_1 tr th, .money_table_2 tr th {
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+/*button in this section*/
+.money_button_1, .money_button_2 {
+    padding: 11px 28px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 19px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.money_button_1 {
+    background: #27c7ab;
+    color: #fff;
+}
+
+.money_button_2 {
+    background: #fff;
+    color: #27c7ab;
 }
 
 /*FOOTER*/
