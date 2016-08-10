@@ -5,6 +5,7 @@
 	<title>Main page</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
     <!--HEADER-->
@@ -13,19 +14,13 @@
             <h3>Sit <span class="color">on</span> chair</h3>
             <div class="head_nav">
                 <ul id="nav">
-                    <li><a href="#">O firmie
-                        </a>
-                    </li>
-
-<!--DIV W LIŚCIE
-                    <div class="nav_lev2">
-                        <ul>
+                    <li>O firmie
+                        <ul class="nav_level2">
                             <li><a href="#">Aktualności</a></li>
                             <li><a href="#">Nasz team</a></li>
                             <li><a href="#">Historia</a></li>
                         </ul>
-                    </div>
--->
+                    </li>
                     <li><a href="#">Galeria</a></li>
                     <li><a href="#">Kontakt</a></li>
                 </ul>
@@ -57,18 +52,10 @@
     <section class="promo_container">
         <div class="promo_section main">
             <div class="promo_col">
-                <div class="promo_opacity">
-                        <h3>Chair CLAIR</h3>
-                    </div>
-                <div class="promo_img">
                 <img src="images/box1_img.jpg" alt="chair Clair">  
-                </div>
             </div>            
             <div class="promo_col">
                 <img src="images/box2_img.jpg" alt="chair Margarita">
-                <div class="promo_opacity">
-                    <h3 class="promo_opacity_h">Chair MARGARITA</h3>
-                </div>
             </div>
             <div class="promo_col_text">
                 <h3>Finds all inputs</h3>
@@ -162,7 +149,7 @@
                 <br>
                 <input type="text" name="email" placeholder="email">
                 <br>
-                <input type="text" name="massage" placeholder="Wiadomość" rows="3">
+                <input type="text" name="massage" placeholder="Wiadomość">
             </form>
             <div class="contact_submit">
                 <img src="images/red_chair.png" alt="red_chair">
