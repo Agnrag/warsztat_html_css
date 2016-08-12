@@ -88,10 +88,58 @@ document.addEventListener("DOMContentLoaded", function(){
     
     }    
     
+    //---------------------------------------------------------
+//SLIDER
+//---------------------------------------------------------
+    
+    function slider() {
+        var nextPicture = document.getElementById("nextPicture");
+        var prevPicture = document.getElementById("prevPicture");
+        var SliderLi = document.querySelectorAll(".slider-interactive-img li");
+        var index = 0;
+    
+        SliderLi[0].classList.add("visible");
+
+        
+        nextPicture.addEventListener("click", function() {
+            SliderLi[index].classList.remove("visible");     
+            index++;
+            
+            if (index > SliderLi.length-1) {
+                index = 0;
+            }
+
+            SliderLi[index].classList.add("visible");
+        });
+        
+
+        prevPicture.addEventListener("click", function() {
+            SliderLi[index].classList.remove("visible");
+            index--;
+            
+            if (index < 0) {
+                index = SliderLi.length - 1;
+            }
+            
+            SliderLi[index].classList.add("visible");
+        });
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     //WYWOŁANIE FUNKCJI:
     //wysuwane menu:
     menu();
     //pojawiająca się półprzezroczysta ramka na zdjęciach:
     console.log(opacityImage());
+    //slider:
+    slider();
     
     });

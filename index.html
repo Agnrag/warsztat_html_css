@@ -32,9 +32,17 @@
 <!--SECTION SLIDER-->
     <section class="slider_container">
         <div class="slider_section main">
-            <a href="#" class="slider_click_l">&lt;</a>
+            <a href="#" id="prevPicture" class="slider_click_l">&lt;</a>
             <div class="slider">
-                <img src="images/black_chair.png" alt="chair">
+                <div class="slider-interactive-img">
+                    <ul>
+                        <li><img src="images/black_chair.png" alt="black-chair"></li>
+                        <li><img src="images/orange.png" alt="orange-chair"></li>
+                        <li><img src="images/red.png" alt="red-chair"></li>
+                    </ul>
+<!--                    <img src="images/black_chair.png" alt="chair">-->
+                </div>
+                
                 <div class="slider_text">
                     <h1>Sit <span class="color">on </span>our <span class="color">chair</span></h1>
                     <p>
@@ -43,7 +51,7 @@
                     <a href="#" class="slider_button">Zobacz więcej</a>
                 </div>
             </div>
-            <a href="#" class="slider_click_r">&gt;</a>
+            <a href="#" id="nextPicture" class="slider_click_r">&gt;</a>
             <div class="clear"></div>
         </div>
     </section>
